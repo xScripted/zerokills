@@ -35,4 +35,4 @@ services:
       - 8888:80
     volumes:
       - ./conf.d:/etc/nginx/sites-available
-      - ./public:/var/www/public
+      - ./:/var/www/zerokills
