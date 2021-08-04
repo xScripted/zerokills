@@ -1,0 +1,197 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@font-face {
+    font-family: Valorant;
+    src: url('/fonts/valorant-font.tff') format('truetype');
+}
+
+@import 'media-queries';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    color: white;
+    font-family: 'Montserrat' !important;
+}
+
+#bg-logo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/zk-opacity.png');
+    background-position-x: -300px;
+    background-position-y: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+    filter: invert(0.1);
+}
+
+.title-section {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    color: white;
+    padding: 50px 0px;
+    font-family: 'Valorant';
+}
+
+// Calendario
+.match {
+    width: 100%;
+    height: 150px;
+    border: 5px solid lightgray;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+
+    .match-banner {
+        width: 100%;
+        height: 100%;
+        background-color: #0f0f0f;
+        font-size: 14px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: center;
+        padding: 0px 10px;
+
+        @include tablet {
+            grid-template-columns: 1fr 1fr;
+            font-size: 20px;
+
+            .m-title {
+                text-align: right;
+            }
+        }
+    }
+
+    .match-body {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(39, 39, 39);
+        font-size: 25px;
+        padding: 0px 10px;
+
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        align-content: center;
+
+
+        @include tablet {
+
+        }
+
+        .m-time {
+            align-self: center;
+        }
+
+        .m-results {
+            display: flex;
+            align-items: center;
+            justify-self: center;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .m-result {
+                padding: 0px 10px;
+            }
+        }
+    
+
+        .m-watch {
+            transition: .3s ease;
+            background: rgb(55,0,240);
+            color: white;
+            font-size: 18px;
+            padding: 5px 30px;
+            border-radius: 5px;
+            border: 0;
+            box-shadow: 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%), 0 2px 4px -1px rgb(0 0 0 / 30%);
+
+            &:hover {
+                transition: .3s ease;
+                background: #c801ff;
+            }
+        }
+    }
+}
+
+// Noticia
+
+.noticia {
+    color: white;
+
+    h1 {
+        margin: 30px 0px;
+        color: #ff00c6;
+        font-weight: bold;
+    }
+
+    .content {
+        font-size: 16px;
+    }
+
+    .noticia-bg {
+
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .noticia-footer {
+        text-align: right;
+        font-size: 20px;
+        color: lightgray;
+    }
+}
+
+// Slider HOME
+.splide__pagination__page.is-active {
+    background: #c801ff !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.8); 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(183, 58, 255); 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition-property: opacity;
+    transition-duration: .2s;
+}
+  
+.fade-enter-active {
+    transition-delay: .2s;
+}
+  
+.fade-enter, .fade-leave-active {
+    opacity: 0
+}
