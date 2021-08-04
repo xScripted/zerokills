@@ -1,0 +1,5 @@
+ports: 
+- port: 8888
+  onOpen: open-browser
+- port: 8889
+  onOpen: open-browser
