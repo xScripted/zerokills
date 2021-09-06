@@ -27,7 +27,7 @@ class AdminHomeController extends Controller
     public function index() {
         $overviews = Overview::join('users', 'overview.user_id', '=', 'users.id')
                         ->orderBy('users.created_at', 'desc') //->paginate(5)->only
-                        ->get(['Overview.*', 'users.name']);
+                        ->get(['overview.*', 'users.name']);
 
         $overviews = json_decode(response($overviews)->content());
 
