@@ -32,7 +32,7 @@ export default new Vuex.Store({
         async loadNoticias({ commit }) {
             var request = await axios.get(process.env.MIX_APP_URL + '/api/v1/noticias')
             console.log(process.env.MIX_APP_URL + '/api/v1/noticias');
-            console.log('DATA:', request.data);
+            console.log('DATA::', request.data);
             commit('setNoticias', request.data);
         },
         async loadCalendario({ commit }) {
