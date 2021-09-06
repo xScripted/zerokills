@@ -1,31 +1,27 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
-@font-face {
-    font-family: Valorant;
-    src: url('/fonts/valorant-font.tff') format('truetype');
-}
+@import "media-queries";
 
-@import 'media-queries';
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("http://fonts.cdnfonts.com/css/valorant");
 
 body {
     color: white;
-    font-family: 'Montserrat' !important;
+    font-family: "Montserrat" !important;
 }
 
 #bg-logo {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('/img/zk-opacity.png');
+    background-image: url("/img/zk-opacity.png");
     background-position-x: -300px;
     background-position-y: 100px;
     background-repeat: no-repeat;
@@ -40,7 +36,7 @@ body {
     padding-top: 20px;
     color: white;
     padding: 50px 0px;
-    font-family: 'Valorant';
+    font-family: "Valorant";
 }
 
 // Calendario
@@ -84,9 +80,7 @@ body {
         grid-template-columns: 1fr 5fr 1fr;
         align-content: center;
 
-
         @include tablet {
-
         }
 
         .m-time {
@@ -107,20 +101,20 @@ body {
                 padding: 0px 10px;
             }
         }
-    
 
         .m-watch {
-            transition: .3s ease;
-            background: rgb(55,0,240);
+            transition: 0.3s ease;
+            background: rgb(55, 0, 240);
             color: white;
             font-size: 18px;
             padding: 5px 30px;
             border-radius: 5px;
             border: 0;
-            box-shadow: 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%), 0 2px 4px -1px rgb(0 0 0 / 30%);
+            box-shadow: 0 4px 5px 0 rgb(0 0 0 / 14%),
+                0 1px 10px 0 rgb(0 0 0 / 12%), 0 2px 4px -1px rgb(0 0 0 / 30%);
 
             &:hover {
-                transition: .3s ease;
+                transition: 0.3s ease;
                 background: #c801ff;
             }
         }
@@ -143,7 +137,6 @@ body {
     }
 
     .noticia-bg {
-
         width: 100%;
         height: 300px;
         background-size: cover;
@@ -167,31 +160,33 @@ body {
 ::-webkit-scrollbar {
     width: 10px;
 }
-  
+
 /* Track */
 ::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.8); 
-}
-   
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgb(183, 58, 255); 
-}
-  
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: rgba(0, 0, 0, 0.8);
 }
 
-.fade-enter-active, .fade-leave-active {
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(183, 58, 255);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.fade-enter-active,
+.fade-leave-active {
     transition-property: opacity;
-    transition-duration: .2s;
+    transition-duration: 0.2s;
 }
-  
+
 .fade-enter-active {
-    transition-delay: .2s;
+    transition-delay: 0.2s;
 }
-  
-.fade-enter, .fade-leave-active {
-    opacity: 0
+
+.fade-enter,
+.fade-leave-active {
+    opacity: 0;
 }

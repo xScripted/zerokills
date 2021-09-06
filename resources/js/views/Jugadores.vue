@@ -55,7 +55,7 @@
         .team-block {
 
             .title-section {
-                font-family: Valorant;
+                font-family: Valorant, Montserrat;
                 font-size: 30px;
                 margin-top: 40px;
                 text-align: center;

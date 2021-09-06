@@ -10,6 +10,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="http://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
 
         <!-- Styles -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -34,14 +35,11 @@
                 opacity: 0.3;
             }
 
-            @font-face {
-                font-family: Valorant;
-                src: url('/fonts/valorant-font.tff');
-            }   
+            @import url('http://fonts.cdnfonts.com/css/valorant');
 
             .title-section {
                 text-align: center;
-                font-family: Valorant;
+                font-family: Valorant, Montserrat;
                 font-size: 50px;
             }
         </style>

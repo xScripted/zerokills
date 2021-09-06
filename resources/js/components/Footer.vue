@@ -107,7 +107,7 @@
                 font-size: 18px;
 
                 .g-title {
-                    font-family: Valorant;
+                    font-family: Valorant, Montserrat;
                 }
 
                 .item a{
