@@ -6,19 +6,19 @@
                 <div class="group">
                     <div class="g-title"> REDES SOCIALES </div>
                     <div class="item"> 
-                            <a href="https://www.instagram.com/zerokills.esports/" target="_blank">
-                                Instagram 
-                            </a>
-                            <a href="https://twitter.com/zk_zerokills" target="_blank">
-                                Twitter 
-                            </a>
-                            <a href="https://www.youtube.com/channel/UCRxZjD5iMftgPgok3RnDg1Q" target="_blank">
-                                Youtube 
-                            </a>
-                            <a href="https://discord.gg/jFknQMbMDB" target="_blank">
-                                Discord 
-                            </a>
-                        </div>
+                        <a href="https://www.instagram.com/zerokills.esports/" target="_blank">
+                            Instagram 
+                        </a>
+                        <a href="https://twitter.com/zk_zerokills" target="_blank">
+                            Twitter 
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCRxZjD5iMftgPgok3RnDg1Q" target="_blank">
+                            Youtube 
+                        </a>
+                        <a href="https://discord.gg/jFknQMbMDB" target="_blank">
+                            Discord 
+                        </a>
+                    </div>
                 </div>
 
                 <img src="/img/zklogo.png" class="logo">
